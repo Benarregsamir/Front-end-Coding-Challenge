@@ -1,143 +1,237 @@
-/***reset***/
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-body {
-	line-height: 1;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/***reset***/
-*,
 body {
 	font-family: 'helvitica', sans-serif;
+	background: #9ca4ab;
 
-	&:focus {
-		outline: 0;
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+			opacity: 0.8;
+		}
+	}
+
+	.arrow-down {
+		color: #fff;
+	}
+}
+
+header {
+	background: url("../images/new-york-night.jpg") center;
+	height: 445px;
+	min-height: 445px;
+	position: relative;
+
+	.header-filter {
+		padding-top: 23px;
+		background: rgba(40,49,66,0.64);
+		height: 445px;
+		min-height: 445px;
+		display: block;
+		box-shadow: inset 0 0 20px 20px #192536;
+
+		.header-top {
+			margin-bottom: 90px;
+
+			.top-left {
+				.brand {
+					img {
+						width: 160px;
+					}
+				}
+
+				.dropdown-top {
+					color: #fff;
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 2;
+					margin-left: 18.1%;
+				}
+			}
+
+			.dropdown-top {
+				display: inline-block;
+			}
+
+			.quick-access {
+				text-align: right;
+
+				a {
+					&:before {
+						color: #fff;
+						font-size: 25px;
+						position: relative;
+						top: 12px;
+						margin-right: 25px;
+					}
+				}
+
+				#dropdownProfil {
+					border: 0;
+					background: transparent;
+
+					img {
+						width: 50px;
+						height: 50px;
+						border-radius: 50px;
+					}
+				}
+			}
+		}
+
+		.header-body {
+			.image-page {
+				img {
+					width: 190px;
+					border-radius: 100px;
+					border: 2px solid #fff;
+				}
+			}
+
+			.title-page {
+				color: #fff;
+
+				h1 {
+					font-size: 66px;
+				}
+
+				h4 {
+					font-weight: 300;
+				}
+
+				a {}
+			}
+
+			.option-page {
+				text-align: right;
+				line-height: 15;
+
+				a {
+					background: #e33a44;
+					padding: 15px 30px;
+					border-radius: 50px;
+				}
+
+				button {
+					background: transparent;
+					border: 1px #fff solid;
+					color: #fff;
+					border-radius: 20px;
+					padding: 10px;
+					margin-left: 25px;
+				}
+			}
+		}
+
+		.header-bottom {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			color: #fff;
+			text-transform: uppercase;
+
+			nav {
+				padding: 0 15px;
+				display: flex;
+
+				.nav-menu {
+					display: flex;
+					list-style-type: none;
+					margin-left: 170px;
+
+					li {
+						margin-right: 85px;
+
+						a {
+							&:hover {
+								color: #e33a44;
+								border-bottom: 2px solid #e33a44;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+section {
+	.container {
+		padding: 20px;
+		background: #fff;
+
+		.foods {
+			padding-right: 0;
+
+			.card {
+				padding: 0;
+				width: 33.3%;
+				float: left;
+				overflow: hidden;
+
+				.slider {
+					border-radius: 5px;
+					overflow: hidden;
+					height: 300px;
+					width: 250px;
+
+					img {
+						min-height: 300px;
+						width: auto;
+					}
+
+					.bx-wrapper {
+						-moz-box-shadow: 0 0 5px #ccc;
+						-webkit-box-shadow: 0 0 5px rgba(204, 204, 204, 0);
+						box-shadow: 0 0 5px rgba(204, 204, 204, 0);
+						border: 0;
+						background: rgba(255, 255, 255, 0);
+					}
+				}
+
+				h4 {
+					span {
+						color: #ffd151;
+					}
+				}
+			}
+		}
+
+		.map {
+			padding-left: 0;
+
+			#map-search-input {
+				margin-top: 11px;
+				height: 50px;
+				border-radius: 50px;
+				border: 0;
+				width: 86%;
+				font-size: 12px;
+				padding-left: 6%;
+				margin-left: 2%;
+				box-shadow: 3px 3px 7px 1px rgb(136, 136, 136);
+
+				&:focus {
+					border-color: #4d90fe;
+				}
+			}
+
+			#map {
+				border-radius: 5px;
+				width: 100%;
+				height: 730px;
+				box-shadow: 3px 3px 7px 1px rgb(136, 136, 136);
+			}
+		}
+	}
+}
+footer{
+	.container{
+		background: #283142;
+		padding: 60px 0 60px 140px;
+img{
+	    width: 170px;
+}
 	}
 }
