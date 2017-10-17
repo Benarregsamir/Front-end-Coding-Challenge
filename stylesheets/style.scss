@@ -41,17 +41,16 @@ body {
 	overflow-x: hidden;
 
 	* {
-		-webkit-transition: opacity 0.2s ease-in;
-		-moz-transition: opacity 0.2s ease-in;
-		-o-transition: opacity 0.2s ease-in;
-		transition: opacity 0.2s ease-in;
-
 		&:focus {
 			outline: 0;
 		}
 	}
 
 	a {
+    -webkit-transition: opacity 0.2s ease-in;
+    -moz-transition: opacity 0.2s ease-in;
+    -o-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
 		color: #fff;
 		cursor: pointer;
 
