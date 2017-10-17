@@ -466,7 +466,7 @@
 
     display: flex;
     position: absolute;
-right: -18%;
+right: 0%;
 
           a {
             &:before {
@@ -627,9 +627,6 @@ top: 5px;
 
 
         .quick-access {
-
-right: -12%;
-
           a {
             &:before {
 
@@ -777,8 +774,6 @@ right: -12%;
           }
         }
         .quick-access {
-
-right: 0%;
           a {
             &:before {
               font-size: 20px;
