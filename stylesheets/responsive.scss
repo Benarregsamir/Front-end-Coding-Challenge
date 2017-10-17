@@ -1,8 +1,8 @@
 @media (min-width: 1940px) {
-  body{
+  body {
     .container {
-  		width: 1440px;
-  	}
+      width: 1440px;
+    }
   }
 }
 @media (max-width: 1499px) {
@@ -13,26 +13,26 @@
     .header-filter {
       height: 485px;
       min-height: 485px;
-      }
-      .header-body {
-        .option-page {
-          text-align: left;
-          position: relative;
-          top: 80px;
-        }
-      }
     }
 
-    section {
-      .container {
-        .foods {
-          .card {
-            .slider {
-              .bxslider {
-                li {
-                  img {
-                    min-height: 336px;
-                  }
+    .header-body {
+      .option-page {
+        text-align: left;
+        position: relative;
+        top: 80px;
+      }
+    }
+  }
+
+  section {
+    .container {
+      .foods {
+        .card {
+          .slider {
+            .bxslider {
+              li {
+                img {
+                  min-height: 336px;
                 }
               }
             }
@@ -40,10 +40,8 @@
         }
       }
     }
-
   }
-
-
+}
 @media (max-width: 1299px) {
   section {
     .container {
@@ -85,26 +83,32 @@
           height: 50px;
           width: 77%;
         }
+
         #map {
           height: 742px;
+
           .gm-bundled-control {
             margin: 10px 0 0 10px !important;
+
             .gmnoprint {
               > div {
                 border-radius: 5px !important;
                 width: 40px !important;
                 height: 75px !important;
+
                 div {
                   &:nth-child(1) {
                     left: 7px !important;
                     top: 7px !important;
                   }
                 }
+
                 div {
                   &:nth-child(2) {
                     top: 13px !important;
                   }
                 }
+
                 div {
                   &:nth-child(3) {
                     left: 7px !important;
@@ -138,16 +142,20 @@
             width: 100%;
           }
         }
+
         .title-page {
           padding-left: 4.1%;
           margin-top: -8px;
+
           h1 {
             line-height: 1.5;
           }
         }
+
         .option-page {
           text-align: right;
           top: 80px;
+
           .settign-btn {
             padding: 4.3%;
           }
@@ -166,6 +174,7 @@
               margin-bottom: 25px;
             }
           }
+
           .slider {
             .bxslider {
               li {
@@ -175,10 +184,12 @@
                 }
               }
             }
+
             .bx-wrapper {
               .bx-viewport {
                 height: 432px;
               }
+
               .bx-controls-direction {
                 a {
                   zoom: 0.7;
@@ -188,12 +199,15 @@
           }
         }
       }
+
       .map {
         padding-left: 15px;
-      overflow: hidden;
-      right: -15px;
+        overflow: hidden;
+        right: -15px;
+
         #map {
           height: 310px;
+
           .gm-bundled-control {
             margin: 10px 0 0 10px !important;
           }
@@ -202,7 +216,7 @@
     }
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     .dropdown {
       .dropdown-menu {
@@ -250,6 +264,7 @@
             }
           }
         }
+
         .quick-access {
           text-align: right;
           padding-right: 3.1%;
@@ -353,26 +368,25 @@
           .slider {
             .bxslider {
               li {
-
                 &:hover {
-  								> img {
-  									opacity: 1;
-  								}
+                  > img {
+                    opacity: 1;
+                  }
 
-  								> .favorit {
-  									visibility: visible;
+                  > .favorit {
+                    visibility: visible;
 
-  									&:hover {
-  										&:before {
-  											content: "\e005";
-  										}
-  									}
-  								}
-  							}
+                    &:hover {
+                      &:before {
+                        content: "\e005";
+                      }
+                    }
+                  }
+                }
 
-  							.favorit {
-  								visibility: visible;
-  							}
+                .favorit {
+                  visibility: visible;
+                }
 
                 img {
                   height: 322px;
@@ -395,13 +409,15 @@
           }
         }
       }
+
       .map {
-      right: 0px;
-      #map{
-        .gm-bundled-control{
-          display: none;
+        right: 0;
+
+        #map {
+          .gm-bundled-control {
+            display: none;
+          }
         }
-      }
       }
     }
   }
@@ -409,7 +425,8 @@
   footer {
     .container {
       padding: 40px 0 40px 10.7%;
-      .row{
+
+      .row {
         img {
           width: 115px;
         }
@@ -461,29 +478,26 @@
           }
         }
 
-
         .quick-access {
-
-    display: flex;
-    position: absolute;
-right: 0%;
+          display: flex;
+          position: absolute;
+          right: 0;
 
           a {
             &:before {
-
-                  margin-right: 10px;
+              margin-right: 10px;
             }
           }
 
           #dropdownProfil {
             .arrow-down {
               right: -20%;
-top: 5px;
+              top: 5px;
             }
 
             img {
               width: 30px;
-  height: 30px;
+              height: 30px;
             }
           }
         }
@@ -491,7 +505,8 @@ top: 5px;
 
       .header-body {
         width: 100%;
-    margin-top: -25px;
+        margin-top: -25px;
+
         .image-page {
           text-align: center;
 
@@ -527,7 +542,8 @@ top: 5px;
       }
 
       .header-bottom {
-            bottom: 10px;
+        bottom: 10px;
+
         nav {
           .dropdown {
             order: 2;
@@ -535,9 +551,10 @@ top: 5px;
             position: absolute;
             right: 25px;
             top: 0;
-.dropdown-menu{
-      left: -90%;
-}
+
+            .dropdown-menu {
+              left: -90%;
+            }
           }
 
           .nav-menu {
@@ -573,24 +590,27 @@ top: 5px;
       .foods {
         .card {
           width: 48%;
-    margin: 0 auto 30px auto;
+          margin: 0 auto 30px;
 
           h4 {
             font-size: 20px;
+
             span {
               display: inline-block;
               left: 5%;
             }
           }
-.likes{
-  margin-top: -25px;
-}
+
+          .likes {
+            margin-top: -25px;
+          }
+
           .slider {
             .bxslider {
               li {
                 img {
                   height: 222px;
-      min-height: 238px;
+                  min-height: 238px;
                 }
               }
             }
@@ -611,37 +631,23 @@ top: 5px;
       }
     }
   }
-
 }
-
-
-
-
-
 @media (max-width: 410px) {
-
   header {
-  .header-filter {
-
+    .header-filter {
       .header-top {
-
-
         .quick-access {
           a {
             &:before {
-
-                  margin-right: 10px;
+              margin-right: 10px;
             }
           }
-
-
         }
       }
 
-
-
       .header-bottom {
-            bottom: 10px;
+        bottom: 10px;
+
         nav {
           .dropdown {
             order: 2;
@@ -686,25 +692,28 @@ top: 5px;
       .foods {
         .card {
           width: 75%;
-  margin: 0 auto 30px auto;
-  float: none;
+          margin: 0 auto 30px;
+          float: none;
 
           h4 {
             font-size: 20px;
+
             span {
               display: inline-block;
               left: 5%;
             }
           }
-.likes{
-  margin-top: -25px;
-}
+
+          .likes {
+            margin-top: -25px;
+          }
+
           .slider {
             .bxslider {
               li {
                 img {
                   height: 300px;
-    min-height: 238px;
+                  min-height: 238px;
                 }
               }
             }
@@ -723,13 +732,9 @@ top: 5px;
           }
         }
       }
-
     }
   }
-
 }
-
-
 @media (max-width: 321px) {
   body {
     .dropdown {
@@ -773,22 +778,21 @@ top: 5px;
             }
           }
         }
+
         .quick-access {
           a {
             &:before {
               font-size: 20px;
               top: 5px;
-                  margin-right: 10px;
+              margin-right: 10px;
             }
           }
-
-
         }
       }
 
-
       .header-bottom {
-            bottom: 10px;
+        bottom: 10px;
+
         nav {
           .dropdown {
             order: 2;
@@ -829,29 +833,29 @@ top: 5px;
   section {
     .container {
       .foods {
-
         .card {
           width: 100%;
-  margin: 0 auto 30px auto;
-
+          margin: 0 auto 30px;
 
           h4 {
             font-size: 20px;
+
             span {
               display: inline-block;
               left: 5%;
             }
           }
-.likes{
-  margin-top: -25px;
-}
+
+          .likes {
+            margin-top: -25px;
+          }
+
           .slider {
             .bxslider {
               li {
                 img {
                   height: 300px;
-  min-height: 238px;
-
+                  min-height: 238px;
                 }
               }
             }
@@ -870,9 +874,6 @@ top: 5px;
           }
         }
       }
-
-
     }
   }
-
 }
