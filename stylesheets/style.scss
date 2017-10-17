@@ -528,9 +528,12 @@ footer {
 	.container {
 		background: #283142;
 		padding: 80px 0 80px 10.7%;
+.row{
+  width: 100%;
+  img {
+    width: 200px;
+  }
+}
 
-		img {
-			width: 200px;
-		}
 	}
 }
