@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
   jQuery('.bxslider').bxSlider({
-    pager : 'false'
-  });
+  pager : false
+});
 });
 
 function initAutocomplete() {
@@ -21,6 +21,7 @@ function initAutocomplete() {
         overviewMapControl: true,
         rotateControl: true
       });
+
       var input = document.getElementById('map-search-input');
       var searchBox = new google.maps.places.SearchBox(input);
       map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
@@ -52,9 +53,10 @@ function initAutocomplete() {
             anchor: new google.maps.Point(17, 34),
             scaledSize: new google.maps.Size(25, 25)
           };
+          var iconBase = '/Applications/MAMP/htdocs/Front_end_Coding_Challenge/images/';
           markers.push(new google.maps.Marker({
             map: map,
-            icon: icon,
+            icon: iconBase + 'markers.png',
             title: place.name,
             position: place.geometry.location
           }));
